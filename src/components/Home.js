@@ -3,6 +3,7 @@ import Menu from './Menu'
 import feature1 from '../assets/feature1.png';
 import feature2 from '../assets/feature2.png';
 import feature3 from '../assets/feature3.png';
+import accounts from '../assets/accounts.png';
 import account1 from '../assets/account1.png';
 import account2 from '../assets/account2.png';
 import cash1 from '../assets/cash1.png';
@@ -177,9 +178,80 @@ export default function Home() {
                 </div>
             </section>
 
+            {/*  */}
+
+            <section id='iban-account' className="lg:px-20 px-5 lg:pt-20 py-8 bg-accounts">
+                <div className='container mx-auto'>
+                    <div className='text-center space-y-5'>
+                        <h3 className='md:text-5xl text-3xl '>
+                            IBAN Accounts
+                        </h3>
+                        <p className='md:text-2xl text-xl'>
+                            Banking in Your Control
+                        </p>
+                    </div>
+
+                    <div className='lg:flex items-center justify-center gap-16 md:pt-20 pt-8 lg:space-y-0 space-y-8'>
+
+                        <div className='lg:w-1/2'>
+                            <img src={accounts} alt='card' className='w-1/2 lg:float-right lg:block flex mx-auto'></img>
+                        </div>
+
+                        <div className='lg:w-1/2 space-y-8 lg:block hidden'>
+                            <div className='space-y-5'>
+                                <h3 className='md:text-4xl text-2xl font-semibold'>
+                                    UK Sort Code +
+                                </h3>
+                                <h3 className='md:text-4xl text-2xl font-semibold'>
+                                    Account Number
+                                </h3>
+                            </div>
+
+                            <p className='md:text-2xl text-xl'>
+                                Access domestic<br></br> banking for GBP <br></br>transfers.
+                            </p>
+
+                            <div className='space-y-5'>
+                                <h3 className='md:text-4xl text-2xl font-semibold'>
+                                    Global
+                                </h3>
+                                <h3 className='md:text-4xl text-2xl font-semibold'>
+                                    Payments
+                                </h3>
+                            </div>
+
+                            <p className='md:text-2xl text-xl'>
+                                Send or receive<br></br> international<br></br> payments via IBAN.
+                            </p>
+                        </div>
+
+                        <div className='lg:w-1/2 space-y-10 lg:hidden block text-center'>
+
+                            <h3 className='text-2xl font-semibold'>
+                                UK Sort Code +
+                                Account Number
+                            </h3>
+
+                            <p className='text-xl'>
+                                Access domestic banking for GBP transfers.
+                            </p>
+
+                            <h3 className='text-2xl font-semibold'>
+                                Global  Payments
+                            </h3>
+
+                            <p className='text-xl'>
+                                Send or receive international payments via IBAN.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
             {/* The FLo Pay Account */}
 
-            <section id='about' className="lg:px-20 px-5 lg:py-20 py-8 z-20">
+            <section id='about' className="lg:px-20 px-5 lg:pb-20 py-8 z-20">
                 <div className='container mx-auto'>
                     <FlopayAccount />
                 </div>
